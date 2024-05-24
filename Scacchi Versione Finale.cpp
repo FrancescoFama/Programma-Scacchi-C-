@@ -13,10 +13,9 @@ int main()
 /* Dichiarazione delle variabili*/
 int const DIMR=8,DIMC=8,DIMVET=4;
 int Matrice[DIMR][DIMC],vetN[DIMVET],vetB[DIMVET];
-int r,c,rIN,cIN,rFI,cFI,box,ERRORE,i,SOSTITUZIONE,somma,EN_PASSANT,ARROCCO_NO;
+int r,c,rIN,cIN,rFI,cFI,ERRORE,i,SOSTITUZIONE,somma,EN_PASSANT,ARROCCO_NO;
 char mossa;
 bool re,EFFETTUATA;
-srand(time(NULL));
 
 /*Inizio del codice */
 for(r=0;r<=DIMR-1;r++)
@@ -105,7 +104,7 @@ for (r=0;r<=DIMR-1;r++)
  }
 
 re=true;
-/*re=true significa che il Re è vivo*/
+/*re=true significa che il Re Ã¨ vivo*/
 mossa='B';
 while(re==true)
      {
@@ -160,7 +159,7 @@ while(re==true)
 	     /*Verifico che le celle inserite nella mossa esistano nella scacchiera*/
 		 if(rIN>=0&&rIN<=7&&cIN>=0&&cIN<=7&&rFI>=0&&rFI<=7&&cFI>=0&&cFI<=7)
 		   {
-             /*Se c'è un ARROCCO fatto da pedine NERE*/
+             /*Se c'Ã¨ un ARROCCO fatto da pedine NERE*/
              if(Matrice[rIN][cIN]==3&&Matrice[rFI][cFI]==4||Matrice[rIN][cIN]==4&&Matrice[rFI][cFI]==3)
                {
                if(rIN==0&&cIN==0&&rFI==0&&cFI==4||rIN==0&&cIN==7&&rFI==0&&cFI==4||rFI==0&&cFI==0&&rIN==0&&cIN==4||rFI==0&&cFI==7&&rIN==0&&cIN==4)
@@ -223,7 +222,7 @@ while(re==true)
 				 }
 			   }
 		   	
-		   	/*Se c'è un ARROCCO fatto da pedine BIANCHE*/
+		   	/*Se c'Ã¨ un ARROCCO fatto da pedine BIANCHE*/
              if(Matrice[rIN][cIN]==9&&Matrice[rFI][cFI]==10||Matrice[rIN][cIN]==10&&Matrice[rFI][cFI]==9)
                {
                if(rIN==7&&cIN==0&&rFI==7&&cFI==4||rIN==7&&cIN==7&&rFI==7&&cFI==4||rFI==7&&cFI==0&&rIN==7&&cIN==4||rFI==7&&cFI==7&&rIN==7&&cIN==4)
