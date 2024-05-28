@@ -16,7 +16,8 @@ int Matrice[DIMR][DIMC],vetN[DIMVET],vetB[DIMVET];
 int r,c,rIN,cIN,rFI,cFI,ERRORE,i,SOSTITUZIONE,somma,EN_PASSANT,ARROCCO_NO;
 char mossa;
 bool re,EFFETTUATA;
-cout<<"          Il gioco degli Scacchi!"<<endl;
+cout<<endl<<"          Il gioco degli Scacchi!"<<endl<<endl;
+
 /*Inizio del codice */
 for(r=0;r<=DIMR-1;r++)
    {
